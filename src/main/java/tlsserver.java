@@ -22,7 +22,7 @@ tmf.init(ts); */
 // First we need to load a keystore
         char[] passphrase = "123456".toCharArray();
         ks = KeyStore.getInstance("JKS");
-        ks.load(new FileInputStream("srv-keystore.jks"), passphrase);
+        ks.load(new FileInputStream("/Users/maxborglowe/Desktop/IEA LTH/EITF55, Datasäkerhet/Project 2/assignment 9 base/tls/wolvessrv1.jks"), passphrase);
 // Initialize a KeyManagerFactory with the KeyStore
         kmf = KeyManagerFactory.getInstance("SunX509");
         kmf.init(ks, passphrase);
